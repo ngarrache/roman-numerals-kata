@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>
+				%date{HH:mm:ss.SSS} %-5level [%thread] [%logger{0}] %message%n
+			</Pattern>
+		</encoder>
+	</appender>
+
+	<logger name="com.ngarrache" level="debug" />
+
+	<root level="trace"> 
+		<appender-ref ref="CONSOLE" />
+	</root>
+
+</configuration>
+ 
